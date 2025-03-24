@@ -1,0 +1,139 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/RobotoMono-Light.woff2') format('woff2'),
+	     url('fonts/RobotoMono-Light.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	height: auto;
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #202020;
+	flex-direction: column; /* Stack input and p below each other */
+	overflow-x: hidden;
+}
+
+hr {
+    width:80vw;
+	text-align:center;
+	background-color: #535353;
+	color: #535353;
+	border: none;
+	height: 1px;
+	margin: 30px 0px 20px 20px;
+	padding: 0px 0px 0px 0px;
+}
+
+br {
+    margin-bottom: 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column; /* Ensures p appears below input */
+	align-items: flex-start;
+	gap: 0px; /* Space between input and p */
+	padding-top: 5vh
+}
+
+input {
+	min-width: 210px;
+	width: 80vw;
+	height: 2.5rem;
+	padding: 30px 0px 30px 20px;
+	font-size: 1.3rem;
+	font-family: 'Roboto', monospace;
+	background-color: #333;
+	color: #dcdcdc;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	text-align: left;
+	justify-content: center;
+	padding-left: 20px;
+	
+}
+
+input:focus {
+	border: none;
+	outline: none;
+}
+
+p {
+	font-family: 'Roboto', monospace;
+	width: 80vw;
+	white-space: nowrap;
+	text-align: left;
+	margin-left: 20px;
+	overflow: hidden;
+	padding: 0;
+}
+
+.answer {
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-overflow: ellipsis;
+	color: #91aacb;
+}
+
+.subheading {
+	color: #b7b7b7;
+	font-weight: bold;
+	font-size: 1rem;
+	margin: 0px;
+	padding: 20px 0px 5px 20px
+}
+
+.equation {
+	color: #6b6b6b;
+	margin: 0px 0px 0px 20px;
+	min-height: 1.3rem;
+}
+
+h1 {
+	font-family: 'Roboto', monospace;
+	font-size: 2rem;
+	color: #FFFFFF;
+	padding: 50px 0px 0px 0px;
+}
+.info{
+	color: #6b6b6b;
+	margin: 0px 0px 0px 20px;
+	min-height: 1.3rem;
+	white-space: wrap;
+}
+
+.githubButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Add some space from the content above */
+	padding-bottom: 50px;
+}
+
+.githubButton a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Roboto', monospace;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.githubButton a:hover {
+    background-color: #555;
+}
+
+.githubLogo {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}

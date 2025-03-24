@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>RPN Calculator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon.ico" />
+</head>
+<body>
+    <h1>RPN Calculator</h1>
+    <div id="container" class="container">
+        <input type="text" id="equation" name="equation" placeholder="Enter equation...">
+        <p id="answer" class="answer">= </p>
+
+        <p class="subheading">Cleaned Expression:</p>
+        <p id="cleaned" class="equation">--</p>
+
+        <p class="subheading">RPN:</p>
+        <p id="rpn" class="equation">--</p>
+    </div>
+    <hr>
+    <p class="subheading">About:</p>
+    <p class="info">This is a calculator which uses RPN to evaluate expressions. RPN was popular in older calculators because it eliminates the need for parentheses and operator precedence rules. While this calculator doesn't let you directly type in RPN, you can see it convert it to RPN first before evaluating it.</p>
+    <br>
+
+    <div class="githubButton">
+    <a href="https://github.com/Raphael-W/RPN-Calculator/" target="_blank" rel="noopener noreferrer">
+        <svg class="githubLogo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.304 3.492.997.108-.775.42-1.304.763-1.603-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.398 3-.403 1.02.005 2.04.136 3 .403 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.78.84 1.235 1.91 1.235 3.22 0 4.608-2.805 5.623-5.475 5.92.43.37.81 1.096.81 2.213 0 1.603-.015 2.896-.015 3.286 0 .318.21.693.825.576 4.77-1.584 8.205-6.08 8.205-11.384 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        View Source Code
+    </a>
+</div>
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
