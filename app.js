@@ -213,6 +213,10 @@ const cleanedText = document.getElementById("cleaned");
 const RPNText = document.getElementById("rpn");
 const container = document.getElementById('container');
 
+window.onload = () => {
+    document.getElementById("equation").focus();
+}
+
 
 document.getElementById("equation").addEventListener("input", function () {
     cleanedExpression = cleanupExpression(this.value);
